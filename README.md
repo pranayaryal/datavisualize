@@ -1,3 +1,3 @@
-speedoheck.github.io
+pranayaryal.github.io
 ====================
 sample demo
