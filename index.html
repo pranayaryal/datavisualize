@@ -27,49 +27,143 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a id="final-exam-study-guide" class="anchor" href="#final-exam-study-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Final Exam Study Guide</h3>
+        <hr>
 
-<p><code>r 2+2</code>
-Confidence Intervals
-A confidence interval is two points (the lower and upper limits) between which the unknown
-population quantity being estimated lies with a certain probability.</p>
+<p>title: "Practice Questions"</p>
 
-<p>Heuristic Formula
-𝑷𝒐𝒊𝒏𝒕 𝑬𝒔𝒕𝒊𝒎𝒂𝒕𝒆 ± (𝑫𝒊𝒔𝒕𝒓𝒊𝒃𝒖𝒕𝒊𝒐𝒏 𝑷𝒆𝒓𝒄𝒆𝒏𝒕𝒊𝒍𝒆) × (𝑺𝒕𝒂𝒏𝒅𝒂𝒓𝒅 𝑬𝒓𝒓𝒐𝒓)</p>
+<h2>
+<a id="output-html_document" class="anchor" href="#output-html_document" aria-hidden="true"><span class="octicon octicon-link"></span></a>output: html_document</h2>
+
+<h5>
+<a id="question-1" class="anchor" href="#question-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question 1</h5>
+
+<p>An investigator is planning a study to determine if a novel, week-long intervention can improve fine motor function in children. The variable she will be measuring is the score on a standard fine motor skills test. The developers of the fine motor skills test report that an improvement in test score of 5 units represents clinically meaningful change, (i.e.) notable improvement in fine motor function. She will conduct her hypothesis test at significance level α = .05 and desires the Type II error rate to be β = 0.20. </p>
+
+<p>(a) In one design of the study, the investigator plans to randomly assign children to one of two groups – the novel intervention or a gold standard intervention. If she can assume a pooled standard deviation of 9, how many children (in total) will she need to recruit to achieve the desired Type II error rate under this design?
+$z_{.975} = 1.96,\beta=0.20,\alpha=0.05,s=9,z_{.80}=0.84,z_{.60}=0.25$
+$$n=\frac{{(z_{1-\alpha/2}+z_{1-\beta}})^2.s^2}{(\mu_a-\mu_0)^2}$$
+$$n=\frac{{(z_{0.975}+z_{0.80}})^2.s^2}{(\mu_a-\mu_0)^2}$$
+$$=\frac{(1.96+0.84)^2 \times 9^2}{5^2}$$ 
+$$= <code>r n=((1.96+0.84)^2)*(9^2)/5^2</code> <code>r n</code>$$</p>
+
+<p>(b) In an alternative design, the investigator will give the fine motor skills test to a single group of children, administer the novel intervention to all of these children, and then give the fine motor skills test again. If she can assume a standard deviation of the differences of 12, how many children (in total) will she need to recruit to achieve the desired Type II error rate under this design?</p>
 
 <ul>
-<li>Each of the quantities – the point estimate, the percentile, and the standard error – depends on what is being estimated.       Consult the formulas on the following pages to see how.</li>
-<li>The percentile additionally depends on the level of confidence, (e.g.) 90%, 95%, 99%, etc.</li>
-<li>Remember that this heuristic formula does not apply for confidence intervals for variances and
-ratios of variances.</li>
+<li>Sample size = $=\frac{(1.96+0.84)^2 \times 12^2}{5^2}$ =  <code>r n=((1.96+0.84)^2)*(12^2)/5^2</code> = <code>r n</code>
+</li>
 </ul>
 
-<p>Interpretation</p>
+<p>(c) In the alternative design of part (b), suppose only 80% of the children that take the pre-intervention motor skills test will be available to take the post-intervention motor skills test. How many children must she recruit for the alternative design of part (b) in order to ensure that the number of students that take the pre-test and post-test will equal the sample size you calculated in part (b)?</p>
 
-<p>The confidence interval contains the unknown population quantity (mean, difference in means, proportion, difference in proportions, etc.) being estimated with a certain probability. More practically speaking, points inside the confidence interval represent “plausible” values for the unknown population quantity. Points outside the confidence interval are not plausible.
-Confidence intervals are often used with “benchmark” values for the quantity being estimated. If the benchmark lies in the confidence interval, then the benchmark is a plausible value. If the benchmark lies outside the confidence interval, then the benchmark is not a plausible value.</p>
+<ul>
+<li>80% take pre-intervention test so new sample size $=(n \times 100) \big /80$ = <code>r n*100/80</code>
+</li>
+</ul>
 
-<p><strong>Hypothesis Tests</strong></p>
-
-<p><em>The Hypothesis Testing Process</em></p>
-
-<p>Know and be able to execute (most) the steps of the hypothesis testing process:</p>
+<p>d) Accounting for the loss of subjects for the paired design noted in part (c), which design would you recommend to the investigator and why?</p>
 
 <ol>
-<li>State a research hypothesis</li>
-<li>Define and evaluate the data</li>
-<li>Refine a research hypothesis to a statistical hypothesis Identify a suitable test statistic</li>
-<li>Determine reference distribution for the test statistic State the statistical decision rule</li>
-<li>Evaluate assumptions about the data</li>
-<li>Calculate the test statistic</li>
-<li>Make the statistical decision</li>
-<li>Calculate p-value and confidence interval𝑻𝒆𝒔𝒕 </li>
+<li>An analyst/therapist is interested in determining if a novel therapeutic relaxation tech- nique can reduce the incidence of anger-related episode in a population of individuals court- ordered to anger-management therapy. He randomly selects 50 individuals undergoing anger- management therapy, and documents the number of self-reported anger-related episodes for one month. He then administers the relaxation technique daily for one week to each individ- ual, and then documents the number of self-reported anger-related episodes for one month after.</li>
 </ol>
 
-<p><em>Heuristic Formula</em></p>
+<h5>
+<a id="astate-the-null-and-alternative-hypotheses-for-the-test-the-analysttherapist-will-conduct" class="anchor" href="#astate-the-null-and-alternative-hypotheses-for-the-test-the-analysttherapist-will-conduct" aria-hidden="true"><span class="octicon octicon-link"></span></a>(a)State the null and alternative hypotheses for the test the analyst/therapist will conduct**</h5>
 
-<p>$\text{Test Statistic}=\frac{\text{Point Estimate - Null Value}}{\text{Standard Error}}$</p>
+<p>$H_0$: Self-reported anger-related episodes is not affected by relaxation technique $(\mu_d \ge 0)$</p>
+
+<p>$H_a$ : self-reported anger-related episodes is affected by relaxation $(\mu_d &lt; 0)$</p>
+
+<h5>
+<a id="bthe-average-change-in-the-number-of-anger-related-episodes-from-before-to-after-the-in--tervention-was--32-the-sample-standard-deviation-of-the-difference-was-121-calculate-the-test-statistic" class="anchor" href="#bthe-average-change-in-the-number-of-anger-related-episodes-from-before-to-after-the-in--tervention-was--32-the-sample-standard-deviation-of-the-difference-was-121-calculate-the-test-statistic" aria-hidden="true"><span class="octicon octicon-link"></span></a>(b)<strong>The average change in the number of anger-related episodes from before to after the in- tervention was -3.2. The sample standard deviation of the difference was 12.1. Calculate the test statistic</strong>
+</h5>
+
+<p>test statistic = <code>t=-3.2/(12.1/sqrt(50))</code> = <code>r t</code></p>
+
+<h5>
+<a id="cstate-the-decision-rule-for-a-level-α--05-test-potentially-useful-percentiles-include-t4905--168-t49025--201-t9805--166-t98025--198" class="anchor" href="#cstate-the-decision-rule-for-a-level-%CE%B1--05-test-potentially-useful-percentiles-include-t4905--168-t49025--201-t9805--166-t98025--198" aria-hidden="true"><span class="octicon octicon-link"></span></a>(c)State the decision rule for a level α = .05 test. Potentially useful percentiles include t49(.05) = −1.68, t49(.025) = −2.01, t98(.05) = −1.66, t98(.025) = −1.98**</h5>
+
+<p>Reference distribution $t_{49}$</p>
+
+<p>Reject $H_0$ if  t &lt; $t_{49}(\alpha)$ which is <code>r t &lt; qt(0.05,49)</code>, <strong>hence accept $H_0$</strong></p>
+
+<h5>
+<a id="e" class="anchor" href="#e" aria-hidden="true"><span class="octicon octicon-link"></span></a>(e)</h5>
+
+<p>pvalue = <code>pt(qt(0.05,49),49)</code> = <code>r pt(qt(0.05,49),49)</code></p>
+
+<h5>
+<a id="fcalculate-the-95-confidence-interval-for-the-mean-difference-in-anger-related-episodes" class="anchor" href="#fcalculate-the-95-confidence-interval-for-the-mean-difference-in-anger-related-episodes" aria-hidden="true"><span class="octicon octicon-link"></span></a>(f)Calculate the 95% confidence interval for the mean difference in anger-related episodes.</h5>
+
+<p><code>t + c(-1,1)*(qt(0.975,49)*(12.1/(sqrt(50))))</code> = <code>r t + c(-1,1)*(qt(0.975,49)*(12.1/(sqrt(50))))</code></p>
+
+<p><strong>4. For the following, answer TRUE or FALSE</strong></p>
+
+<p>(a) The p-value for a two-sided test can be calculated from a one-sided p-value by multiplying the one-sided p-value by two.
+(b) The critical value for a hypothesis test is determined by the reference distribution and the value of the type II error rate β.
+(c) The null hypothesis for any one-sample test of means specifies only one possible value for the population mean.
+(d) For a given data set, an analyst has rejected the null hypothesis H0 : μ ≤ 250 with a level α = .05 test. The 95% confidence interval for μ is (249.2, 271.8). Based on these results, the analyst has miscalculated something.
+(e) Decreasing the Type II error rate will decrease the sample size requirement for a hy- pothesis test.
+(f) An administrator wants to determine if mean ACT scores from in-state university appli- cants (μin) are greater than mean ACT scores from out-of-state applicants (μout). The null hypothesis for such a test would be H0 : μin &gt; μout.
+(g) Increasing the detectable difference in a sample size calculation will decrease the sample size, holding all other variables constant.
+(h) If the pre-intervention and post-intervention measurements in a paired samples study are both normally distributed according to the Shapiro-Wilk test, then the paired samples t-test is appropriate.
+(i) When the null hypothesis is accepted in a statistical hypothesis test, this means the null hypothesis is true.</p>
+
+<p><strong>5. A survey researcher wants to determine if proportion of transplants living in neighborhood A differs from the number of transplants living in neighborhood B. He received responses from 250 residents in neighborhood A, and noted that 48 of these residents were transplants. He received responses from 180 residents in neighborhood B, and noted that 44 of these residents were transplants.</strong></p>
+
+<p>(a) State the null and alternative hypotheses for the test the researcher will conduct.
+(b) Calculate the point estimate for the test statistic.
+(c) Calculate the pooled estimate of the common proportion.
+(d) The standard error associated with the test statistic is 0.040. Calculate the test statistic.
+(e) State the decision rule for a level α = .05 test. Potentially useful percentiles include t428(.975) = 1.966, t428(.95) = 1.648, z(.95) = 1.645, z(.975) = 1.960.
+(f) State the decision reached by the hypothesis testing procedure.
+(g) Which of the following represents the p-value associated with this test? (Circle one)
+• P(|t428| &gt; 1.31) = 0.191 • P(|t428| &gt; 1.96) = 0.051 • P(|z|&gt;1.31)=0.190
+• P(|z|&gt;1.31)=0.050
+(h) Calculate the 95% confidence interval for the difference in proportion of transplant be- tween neighborhoods A and B.</p>
+
+<p><strong>6. For the following, answer “Type I error”, “Type II error”, “No error”</strong></p>
+
+<p>(a) Suppose that it is known for certain that the mean resting heart rate in a certain popu- lation is 75 bpm. An investigator randomly selects 40 individuals from this population, measures their resting heart rate, and then rejects the null hypothesis H0 : μ = 75 in a statistical test.</p>
+
+<p>(b) While the exact proof (alcohol content) of a certain barrel of whiskey is not known, it is known that the proof is less than 90. A quality analyst tests 25 bottles of whiskey filled from this barrel, and based on a statistical hypothesis test, rejects the null hypothesis H0 :μ&gt;90.</p>
+
+<p>(c) Suppose that it is known that the proportion of defective watches produced at a ware- house is equal to 0.06. An engineer samples 70 watches produced at the warehouse, and fails to reject the null hypothesis H0 : p = 0.06.</p>
+
+<p>(d) Suppose that it is known that the proportion of print jobs that fail on a shared printer is less than .001. An administrator reviews records from 1,000 print jobs, and through a statistical, fails to reject the null hypothesis H0 : p &gt; .001.</p>
+
+<p>(e) Suppose that it is known that the probability of rolling a 6 on a loaded die is 0.50. You conduct an experiment by rolling the die 500 times, and based on the results, reject the null hypothesis H0 : p = 0.50.</p>
+
+<p><strong>7. A biological engineer has developed a new training protocol for teaching mice to negotiate a maze, in the hopes of reducing the variability in the time to complete the maze. He randomly assignes 15 mice to receive the new protocol and 20 mice to receive the old protocol. In the 15 mice receiving the new protocol, he observes a variance of 124. In the 20 mice receiving the old protocol, he observes a variance of 352.</strong></p>
+
+<p>(a) State the null and alternative hypotheses for a two-sided test comparing variances under the two protocols.
+(b) Calculate the test statistic for a folded F-test of this hypothesis test.
+(c) State the decision rule for a level α = .05 test. Potentially useful percentiles include F14,19(.975) = 2.65, F19,14(.975) = 2.86, t33(.95) = 1.69, t33(.975) = 2.03.
+(d) State the decision reached by the hypothesis testing procedure.
+(e) Which of the following represents the p-value associated with this test? (Circle one)
+• P(t33 &gt;2.84)=.003
+• 2 ∗ P(F14,19 &gt; 2.65) = .050 • 2 ∗ P(F14,19 &gt; 2.84) = .036 • 2 ∗ P(F19,14 &gt; 2.65) = .068
+(f) Which of the following is a plausible 95% confidence interval for the ratio of the two variances, calculated as (old protocol ÷ new protocol)?
+• (1.07, 8.12) • (0.89, 10.02) • (46.8, 354.7) • (0.24, 2.64)</p>
+
+<p><strong>8. Read the following hypothesis testing scenarios. Based on the information provided select the appropriate test to conduct. The list of tests from which to select are as follows:</strong></p>
+
+<p>One-Sample t-test, Paired-Samples t-test, Two-Sample Unequal Variances t-test, Two-Sample Equal Variances t-test, Two-Sample F-test, One-Sample z-test of Proportions, Wilcoxon Signed Rank Test, Wilcoxon Rank Sum Test, Binomial Exact Test, Levene’s Test</p>
+
+<p>(a) Purpose: To compare mean (or median) times on the 1-mile run in a population of middle school students against a null value of 8 minutes. Data: 1-mile run times of 25 randomly selected middle schoolers. Information: A Shapiro-Wilk test of the run times produced a p-value of .03.</p>
+
+<p>(b) Purpose: To compare the proportion of individuals that brush their teeth daily in a certain population to a null value of 0.85. Data: Yes/No responses to the question in 33 individuals. Information: 25 indicated that they brushed their teeth daily.</p>
+
+<p>(c) Purpose: To compare the variance in cooking times between two commercial cake mixes. Data: Cooking times from 40 cakes made from commercial mix A and 50 cakes from commercial mix B. Information: A Shapiro-Wilk test of the cooking times for mix A produced a p-value of .13. A Shapiro-Wilk test of the cooking times for mix B produced a p-value of .06.</p>
+
+<p>(d) Purpose: To compare mean (or median) scores on the ACT exam between individuals having attended private vs. public high schools. Data: ACT scores for 25 private school students and 45 public school students. Information: A Shapiro-Wilk test of the ACT scores in the 25 private school students produced a p-value of .43. A Shapiro-Wilk test of the ACT scores in the 45 public school students produced a p-value of .04. An F-test comparing variances between the two groups produced a p-value of .12.</p>
+
+<p>(e) Purpose: To determine if a new fitness regimen resulted in weight loss in a chronically sedentary population. Data: Measurements of body weight before and after the two month intervention. Information: A Shapiro-Wilk test of the difference in weight before and after the intervention produced a p-value of .01.</p>
+
+<p>(f) Purpose: To determine if a new fitness regimen resulted in weight loss in a chronically sedentary population. Data: Measurements of body weight before and after the two month intervention. Information: A Shapiro-Wilk test of the difference in weight before and after the intervention produced a p-value of .01.</p>
+
+<p>(g) Purpose: To determine if the proportion children having had rubella in a population of children of anti-vaccination conspiracy theorists was greater than a “critical” threshold of .0005. Data: Yes/No determinations of whether or not 20,000 children had previously acquired rubella infections. Information: 195 of the children had previosuly experienced a rubella infection.</p>
+
+<p>(h) Purpose: To compare mean (or median) nutritional index scores between lunches served at two competing middle schools. Data: Nutritional index scores for 25 randomly- selected lunches at school A, and 29 randomly-selected lunches at school B. Information: A Shapiro-Wilk test of the nutritional index scores in the 25 lunches from school A produced a p-value of .01. A Shapiro-Wilk test of the nutritional index scores in the 29 lunches from school A produced a p-value of .03. An F-test comparing variances between the two groups produced a p-value of .01.</p>
       </section>
     </div>
 
