@@ -8,7 +8,9 @@
    <body>
      <p>Hello!</p>
   <script>
-   d3.selectAll("p").style("color", "pink");
+   d3.selectAll("p").style("color", function() {
+  return "hsl(" + Math.random() * 360 + ",100%,50%)";
+   });
    circleRadii = [40, 20, 10]
  
     var svgContainer = d3.select("body").append("svg")
