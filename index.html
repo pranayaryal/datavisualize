@@ -7,10 +7,15 @@
   </head>
    <body>
      <p>Hello!</p>
+     <p>It's been a pleasure meeeting you</p>
+     <p>After all we have been good friends for a long time</p>
   <script>
    d3.selectAll("p").style("color", function() {
   return "hsl(" + Math.random() * 360 + ",100%,50%)";
    });
+   d3.selectAll("p")
+    .data([4, 8, 15, 16, 23])
+    .style("font-size", function(d) { return d + "px"; });
    circleRadii = [40, 20, 10]
  
     var svgContainer = d3.select("body").append("svg")
