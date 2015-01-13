@@ -38,7 +38,7 @@ var bar = chart.selectAll("g")
 
 bar.append("rect")
     .attr("width", x)
-    .attr("height", barHeight - 4);
+    .attr("height", barHeight - 2);
 
 bar.append("text")
     .attr("x", function(d) { return x(d) - 3; })
