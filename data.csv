@@ -1,5 +1,5 @@
-Population,Hispanic,Non-Hispanic
+Population,Septicemia,Malignant Neoplasms,Diabetes mellitus,Parkinson's Disease ,Alzheimer's Disease,Diseases of Heart,Essential Hypertension and Hypertensive Renal Disease,Cerebrovascular Disease,Influenza&Pneumonia,Chronic Lower Respiratory Disease,Chronic Liver Disease and Cirrhosis,Nephritis, nephrotic syndrome, & nephrosis,Accidents,suicide,homicide
 HISPANIC,310504,552339
-NON-HISPANIC(WHITE),52083,85640
-NON-HISPANIC(BLACK),34343,34343
+NON-HISPANIC(WHITE),12,2,6,13,8,
+NON-HISPANIC(BLACK),9,2,5,15,12,1,11,3,10,6,13,8,4,14,7
 
