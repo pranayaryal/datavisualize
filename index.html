@@ -10,44 +10,11 @@
      <p>It's been a pleasure meeeting you</p>
      <p>After all we have been good friends for a long time</p>
   <script>
-   d3.selectAll("p").style("color", function() {
-  return "hsl(" + Math.random() * 360 + ",100%,50%)";
-   });
-   d3.selectAll("p")
-    .data([15, 25, 35, 16, 23])
-    .style("font-size", function(d) { return d + "px"; });
-    d3.select("body").selectAll("p")
-    .data([4, 8, 15, 16, 23, 42])
-  .enter().append("p")
-    .text(function(d) { return "I’m number " + d + "!"; });
-    d3.select("body").transition()
-    .style("background-color", "black");
-   circleRadii = [40, 20, 10]
- 
-    var svgContainer = d3.select("body").append("svg")
-                                     .attr("width", 600)
-                                     .attr("height", 100);
- 
-    var circles = svgContainer.selectAll("pink")
-                           .data(circleRadii)
-                           .enter()
-                          .append("circle")
-
-    var circleAttributes = circles
-                       .attr("cx", 50)
-                       .attr("cy", 50)
-                       .attr("r", function (d) { return d; })
-                       .style("fill", function(d) {
-                         var returnColor;
-                         if (d === 40) { returnColor = "green";
-                         } else if (d === 20) { returnColor = "purple";
-                         } else if (d === 10) { returnColor = "red"; }
-                         return returnColor;
-                       });
-    d3.selectAll("circle").transition()
-    .duration(750)
-    .delay(function(d, i) { return i * 10; })
-    .attr("r", function(d) { return Math.sqrt(d * scale); });
+   var div = document.createElement("div");
+   div.innerHTML = "Hello, world!";
+   document.body.appendChild(div);
+   
+                       
    </script>
   </body>
 </html>
