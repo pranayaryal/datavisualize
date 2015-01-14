@@ -50,7 +50,7 @@ function dashboard(id, fData){
     
     // function to handle histogram.
     function histoGram(fD){
-        var hG={},    hGDim = {t: 30, r: 0, b: 50, l: 0};
+        var hG={},    hGDim = {t: 30, r: 0, b: 30, l: 0};
         hGDim.w = 900 - hGDim.l - hGDim.r, 
         hGDim.h = 300 - hGDim.t - hGDim.b;
             
@@ -242,20 +242,20 @@ function dashboard(id, fData){
 <script>
 var freqData=[
 {State:'Septice',freq:{white:4786, black:1319, hispanic:249}}
-,{State:'Malig Neopl',freq:{low:1101, mid:412, high:674}}
-,{State:'Diabetes',freq:{low:932, mid:2149, high:418}}
-,{State:'Parkin',freq:{low:832, mid:1152, high:1862}}
-,{State:'Alzhe',freq:{low:4481, mid:3304, high:948}}
-,{State:'Heart Ds',freq:{low:1619, mid:167, high:1063}}
-,{State:'Ess Hypert',freq:{low:1819, mid:247, high:1203}}
-,{State:'Cerebrov',freq:{low:4498, mid:3852, high:942}}
-,{State:'Flu&Pneum',freq:{low:797, mid:1849, high:1534}}
-,{State:'Chronic Resp',freq:{low:162, mid:379, high:471}}
-,{State:'Chronic liv',freq:{low:162,mid:397,high:771}}
-,{State:'Nephritis',freq:{low:161,mid:333,high:343}}
-,{State:'Accid',freq:{low:500,mid:337,high:234}}
-,{State:'Suicide',freq:{low:890,mid:337,high:334}}
-,{State:'Homic',freq:{low:700,mid:437,high:204}}
+,{State:'Malig Neopl',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Diabetes',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Parkin',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Alzhe',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Heart Ds',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Ess Hypert',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Cerebrov',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Flu&Pneum',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Chronic Resp',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Chronic liv',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Nephritis',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Accid',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Suicide',freq:{white:4786, black:1319, hispanic:249}}
+,{State:'Homic',freq:{white:4786, black:1319, hispanic:249}}
 ];
 
 dashboard('#dashboard',freqData);
