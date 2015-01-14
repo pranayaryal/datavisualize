@@ -50,7 +50,7 @@ function dashboard(id, fData){
     
     // function to handle histogram.
     function histoGram(fD){
-        var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
+        var hG={},    hGDim = {t: 30, r: 0, b: 30, l: 0};
         hGDim.w = 900 - hGDim.l - hGDim.r, 
         hGDim.h = 300 - hGDim.t - hGDim.b;
             
@@ -241,7 +241,7 @@ function dashboard(id, fData){
 
 <script>
 var freqData=[
-{State:'Septice',freq:{low:4786, mid:1319, high:249}}
+{State:'Septice',freq:{white:4786, black:1319, hispanic:249}}
 ,{State:'Malig Neopl',freq:{low:1101, mid:412, high:674}}
 ,{State:'Diabetes',freq:{low:932, mid:2149, high:418}}
 ,{State:'Parkin',freq:{low:832, mid:1152, high:1862}}
