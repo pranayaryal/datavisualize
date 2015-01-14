@@ -46,7 +46,7 @@ function dashboard(id, fData){
     function segColor(c){ return {white:"#807dba", black:"#e08214",hispanic:"#41ab5d"}[c]; }
     
     // compute total for each state.
-    fData.forEach(function(d){d.total=d.freq.low+d.freq.mid+d.freq.high;});
+    fData.forEach(function(d){d.total=d.freq.white+d.freq.black+d.freq.hispanic;});
     
     // function to handle histogram.
     function histoGram(fD){
