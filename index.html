@@ -62,7 +62,7 @@ function dashboard(id, fData){
 
         // create function for x-axis mapping.
         var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
-                .domain(fD.map(function(d) { return d[0].length; }));
+                .domain(fD.map(function(d) { return d[0]; }));
 
         // Add x-axis to the histogram svg.
         hGsvg.append("g").attr("class", "x axis")
