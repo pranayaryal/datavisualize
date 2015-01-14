@@ -81,7 +81,7 @@ function dashboard(id, fData){
         bars.append("rect")
             .attr("x", function(d) { return x(d[0]); })
             .attr("y", function(d) { return y(d[1]); })
-            .attr("width", x.rangeBand())
+            .attr("width", x.rangeBand()+7)
             .attr("height", function(d) { return hGDim.h - y(d[1]); })
             .attr('fill',barColor)
             .on("mouseover",mouseover)// mouseover is defined below.
