@@ -1,3 +1,3 @@
 pranayaryal.github.io
 ====================
-Mortality by Race and Disease: US 2008
+This is visualization using d3.js for Mortality by Race and Disease: US 2008.
