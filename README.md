@@ -1,3 +1,3 @@
 pranayaryal.github.io
 ====================
-This is visualization using d3.js for Mortality by Race and Disease: US 2008.
+This is an interactive bar-chart using d3.js(a javascript framework) showing Mortality by Race and Disease from US 2008 data
